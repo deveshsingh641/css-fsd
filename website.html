@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Navbar</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 10px;
+            background-color: #2874f0;
+            color: white;
+        }
+
+        a:hover{
+            padding: 30px;
+            font-size: 20px;
+        }
+
+        .navbar-search{
+            flex: 1;
+            display: flex;
+            margin: 0 20px;
+        }
+
+    
+}
+    </style>
+  
+</head>
+<body>
+
+    <nav class="navbar">
+        
+        <div class="navbar-logo">
+            <a href="#">
+                <img src="" alt="Flipkart Logo">
+            </a>
+        </div>
+
+        
+        <div class="navbar-search">
+            <input type="text" placeholder="Search for products, brands and more">
+            <button>Search</button>
+        </div>
+
+        
+        <div class="navbar-icons">
+            <a href="#">Login</a>
+            <a href="#">Become a Seller</a>
+            <a href="#">More</a>
+            <a href="#" class="cart-icon">
+                <span>Cart</span>
+            </a>
+        </div>
+    </nav>
+
+</body>
+</html>
