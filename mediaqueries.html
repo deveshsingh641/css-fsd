@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color with Media Queries</title>
+    <style>
+        body {
+            background-color: rgb(75, 159, 15);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-color: rgb(7, 54, 7);
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                background-color: rgb(208, 27, 27);
+            }
+        }
+        @media only screen and (min-width:768px){
+            .col-1 {width : 8.33%;}
+            .col-2 {width : 16.66%}
+        }
+
+        @media only screen and(max-width:600px){
+    body{
+        background-color: red;
+    }
+}
+
+.col1{
+    height: 30px;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: aquamarine;
+
+}
+.col2{
+    height: 20px;
+    width: 200px;
+    background-color: blue;
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start:1 ;
+    grid-column-end: 1;
+    margin-top: 10px;
+}
+.sidebar{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    height: 80px;
+    width: 225px;
+    margin-top: 20px;
+   
+    box-sizing: border-box;
+    padding: 5px;
+
+}
+#col-1{
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    height: 20px;
+    width: 200px;
+    background-color: aqua;
+}
+#col-2{
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 20px;
+    width: 200px;
+    background-color: bisque;
+}
+#col-3{
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 20px;
+    width: 200px;
+    background-color: antiquewhite;
+}
+
+
+
+.example{
+    height: 100px;
+    width: auto;
+    background-color: aqua;
+}
+
+
+
+   
+
+      
+
+
+      
+    </style>
+</head>
+<body>
+    <h1>Responsive Background Color</h1>
+</body>
+</html>

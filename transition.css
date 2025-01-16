@@ -1,0 +1,73 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    transition: all 2s ease; 
+}
+
+/* Hover state with different speed curves */
+.box:hover {
+    transform: scale(1.2); /* Increase size */
+    background-color: #e74c3c; /* Change background color */
+}
+
+/* Ease In - Starts slow, then speeds up */
+.box.ease-in {
+    transition-timing-function: ease-in;
+}
+
+/* Ease Out - Starts fast, then slows down */
+.box.ease-out {
+    transition-timing-function: ease-out;
+}
+
+/* Ease In Out - Starts slow, speeds up, then slows down */
+.box.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+/* Linear - Constant speed throughout */
+.box.linear {
+    transition-timing-function: linear;
+}
+
+/* Cubic Bezier - Custom speed curve */
+.box.custom-bezier {
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1); /* A custom bezier curve */
+}
+
+/* Default styles for the element */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    transition: all 2s ease-in-out; /* Transition properties with a delay */
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    transition: all 2s ease-in-out; /* Transition properties with a delay */
+}
+
+/* Hover state */
+.box:hover {
+    transform: scale(1.2); /* Increase size */
+    background-color: #e74c3c; /* Change background color */
+}
+
+/* Delay transition by 1 second */
+.box.delay-1s {
+    transition-delay: 1s; /* Delay the transition by 1 second */
+}
+
+/* Delay transition by 2 seconds */
+.box.delay-2s {
+    transition-delay: 2s; /* Delay the transition by 2 seconds */
+}
+
+/* Delay transition by 0.5 second */
+.box.delay-05s {
+    transition-delay: 0.5s; /* Delay the transition by 0.5 second */
+}
